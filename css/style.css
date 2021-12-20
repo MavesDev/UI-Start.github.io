@@ -222,22 +222,29 @@ footer h4 {
 
   .navbar-nav {
     margin-top: 1rem;
+    text-align: center;
   }
 
   /* Bagian Hero */
 
   .hero::before {
-    opacity: 50%;
+    opacity: 30%;
   }
 
-  .hero .row {
-    max-width: 80% !important;
+  .hero-par-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-title {
+    text-align: center;
   }
 
   /* Bagian About */
 
   .about-content {
-    margin-top: 2rem;
+    margin-top: 1.5em;
+    margin: 0 2rem;
     text-align: center;
   }
 
@@ -255,11 +262,16 @@ footer h4 {
   }
 
   /* Bagian Footer */
+
   footer h4 {
     font-size: 1.2em !important;
   }
 
   footer p {
     font-size: 0.9em;
+  }
+
+  .footer-content {
+    padding: 0 1.5em;
   }
 }

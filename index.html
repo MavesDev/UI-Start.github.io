@@ -22,7 +22,7 @@
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg navbar-light my-navbar pt-5">
         <div class="container-fluid container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/home">
             <img src="img/logo.png" alt="" width="50" height="30" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +34,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link non-active non-active" href="#">Features</a>
+                <a class="nav-link non-active non-active" href="#about">About</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link non-active" href="#">Pricing</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link non-active" href="#">About Us</a>
+                <a class="nav-link non-active" href="#video">Video</a>
               </li>
             </ul>
           </div>
@@ -52,16 +49,19 @@
           <div class="col-md-5">
             <h1 class="fs-1 fw-bold">Ready To Start Your UI/UX Designer?</h1>
             <p class="fs-5 fw-normal text-secondary">Let's begin with little warm up</p>
+            <div class="hero-par-button">
               <a href="#" class="text-decoration-none hero-button rounded-pill">
                 <p class="text-light fw-bold">Lets Start!</p>
               </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Hero End -->
 
-    <section class="container about">
+    <!-- About Start -->
+    <section class="container about" id="about">
       <div class="about-content">
         <div class="row">
           <div class="col-md-6">
@@ -82,8 +82,10 @@
         </div>
       </div>
     </section>
+    <!-- About End -->
 
-    <section class="container video">
+    <!-- Video Start -->
+    <section class="container video" id="video">
       <div class="video-content">
         <h2 class="text-center fw-bold">Need's Tutorial?</h2>
         <p class="text-center text-secondary fs-5">There's a bunch of tutorial UI/UX here!</p>
@@ -107,11 +109,12 @@
       </div>
       </div>
     </section>
+    <!-- Video End -->
 
     <!-- Bagian Footer -->
     <div class="bg-light">
       <footer class="container pt-5">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center footer-content">
           <div class="col-md-4">
             <h4 class="mb-3">About Us</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia voluptate accusantium suscipit pariatur amet!</p>
