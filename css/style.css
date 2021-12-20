@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  height: 600px;
+}
+
+/* Bagian navbar */
+.navbar {
+  background: transparent !important;
+}
+
+/* Bagian link navbar */
+
+.active {
+  color: #4756df !important ;
+  font-weight: 700;
+}
+
+.non-active {
+  color: #000 !important;
+  font-weight: 400;
+}
+
+.non-active:hover {
+  color: #4756df !important ;
+  font-weight: 400;
+}
+
+/* Bagian Hero */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  opacity: 90%;
+  z-index: -1;
+  background: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .hero-title {
+  padding-top: 8rem;
+}
+
+.hero .hero-button {
+  display: flex;
+  background: #4756df;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-button p {
+  margin: 0;
+}
+
+/* Bagian About */
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.about .about-image {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about img {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Bagian Video */
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video img {
+  width: 20rem;
+  height: 12rem;
+  transition: 0.3s ease;
+}
+
+.video img:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+/* Bagian Footer */
+
+footer p {
+  color: #b3b3b3;
+}
+
+footer h4 {
+  color: #8f8f8f;
+}
+
+.my-footlink {
+  padding: 0;
+}
+
+.my-footlink li {
+  list-style: none;
+}
+
+.my-footlink li a {
+  display: flex;
+  font-size: 1.1em;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo img {
+  width: 7rem;
+  height: 4.5rem;
+}
+
+.footer-sosmed ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-sosmed ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50px;
+  background-color: #b3b3b3;
+}
+
+.footer-sosmed ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-copy a,
+.footer-copy i {
+  text-decoration: none;
+  color: #8f8f8f !important;
+}
+
+/* Responsive breakpoints */
+
+@media screen and (max-width: 992px) {
+  section {
+    height: 520px;
+  }
+  /* Bagian Hero */
+  .hero {
+    background-position: right;
+  }
+
+  .hero h1 {
+    font-size: 1.6em !important;
+  }
+
+  .hero p {
+    font-size: 1em !important;
+  }
+
+  /* Bagian About */
+
+  .about h2 {
+    font-size: 1.4em;
+  }
+
+  .about p {
+    font-size: 0.9em;
+  }
+
+  .about img {
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Bagian video */
+
+  .video h2 {
+    font-size: 1.4em;
+  }
+
+  .video p {
+    font-size: 0.9em !important;
+  }
+
+  .video img {
+    width: 14rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    height: 600px;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+
+  /* Bagian Hero */
+
+  .hero::before {
+    opacity: 50%;
+  }
+
+  .hero .row {
+    max-width: 80% !important;
+  }
+
+  /* Bagian About */
+
+  .about-content {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  /* Bagian video */
+
+  .video .video-thumbnail {
+    display: flex;
+    justify-content: center;
+  }
+
+  .video img {
+    width: 16rem;
+    height: 9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Bagian Footer */
+  footer h4 {
+    font-size: 1.2em !important;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+}
